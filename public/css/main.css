@@ -93,8 +93,15 @@ button:hover {
     }
     button {
         border-radius: 50%;
-        padding: 9px 13px;
         margin-left: 10px;
+    }
+    #menu-button {
+        width: 40px;
+        height: 48px;
+        background-image: url("../img/menu.svg");
+        background-position: 50%, 50%;
+        background-repeat: no-repeat;
+        background-size: 30px;
     }
 }
 
@@ -134,8 +141,15 @@ button:hover {
 .overlay .close {
     position: absolute;
     top: 15px;
-    right: 45px;
+    right: 40px;
     font-size: 60px;
+    cursor: pointer;
+}
+
+#menu-exit {
+    cursor: pointer;
+    height: 40px;
+    width: auto;
 }
 
 @media screen and (max-height: 450) {
