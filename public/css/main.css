@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #24252A;
+    height: 100%;
+}
+
+li, a, button {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    color: #EDF0F1;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px 20px 15px 20px;
+    position: sticky;
+    top: 0;
+    background-color: #24252A;
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+nav {
+    order: 1;
+}
+
+.cta {
+    order: 2;
+}
+
+.logo {
+    cursor: pointer;
+    margin-left: auto;
+    height: 50px;
+    order: 3;
+}
+
+.nav-links {
+    list-style: none;
+}
+
+.nav-links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav-links li:nth-child(1) {
+    padding: 0px 20px 0 0;
+}
+
+.nav-links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav-links li a:hover {
+    color: #0088a9
+}
+
+.menu {
+    display: none;
+}
+
+button {
+    padding: 9px 25px;
+    margin-left: 20px;
+    background-color: rgba(0, 136, 169, 1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover {
+    background-color: rgba(0, 136, 169, 0.8);
+}
+
+@media only screen and (max-width: 800px) {
+    .nav-links, .cta {
+        display: none;
+    }
+    .menu {
+        display: inherit;
+    }
+    button {
+        border-radius: 50%;
+        padding: 9px 13px;
+        margin-left: 10px;
+    }
+}
+
+/* Mobile Nav */
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background-color: #24252A;
+    overflow-x: hidden;
+    transition: all 0.5s ease 0s;
+}
+
+.overlay-content {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.overlay a {
+    padding: 15px;
+    font-size: 36;
+    display: block;
+    transition: all 0.3s ease 0s;
+}
+
+.overlay-content a:hover {
+    color: #0088a9;
+}
+
+.overlay .close {
+    position: absolute;
+    top: 15px;
+    right: 45px;
+    font-size: 60px;
+}
+
+@media screen and (max-height: 450) {
+    .overlay a {
+        font-size: 20px;
+    }
+    .overlay .close {
+        font-size: 40px;
+        right: 35px;
+        cursor: pointer;
+    }
+}
+
+.copyright {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    text-align: center;
+    padding: 5px 0px;
+}
