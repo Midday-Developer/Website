@@ -1,1 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+body {
+    height: 100%;
+    min-height: 350px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+#error {
+    height: calc(100vh - 110px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#error h2, h1, p {
+    font-family: 'Montserrat', sans-serif;
+    padding-left: 20px;
+}

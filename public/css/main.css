@@ -23,7 +23,7 @@ header {
     position: sticky;
     top: 0;
     background-color: #24252A;
-    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
 }
 
 nav {
@@ -162,17 +162,14 @@ button:hover {
 /* Main Content */
 
 main #top {
-    height: calc(100vh - 75px);
     background-color: darkseagreen;
 }
 
 main #middle {
-    height: calc(100vh - 75px);
     background-color: lightcoral;
 }
 
 main #bottom {
-    height: calc(100vh - 103px);
     background-color: steelblue;
 }
 
@@ -184,6 +181,7 @@ footer {
 
 .copyright {
     font-family: 'Poppins', sans-serif;
+    color: #EDF0F1;
     text-align: center;
     padding: 5px 0px;
 }
